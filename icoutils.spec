@@ -5,7 +5,7 @@ Version:	0.16.0
 Release:	2
 License:	GPL
 Group:		Applications/Graphics
-Source0:	%{name}-%{version}.tar.bz2
+Source0:	http://www.student.lu.se/~nbi98oli/src/%{name}-%{version}.tar.gz
 URL:		http://www.student.lu.se/~nbi98oli/
 Requires:	perl
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
