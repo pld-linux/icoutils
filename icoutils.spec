@@ -12,6 +12,7 @@ Patch0:		%{name}-am_fixes.patch
 URL:		http://www.student.lu.se/~nbi98oli/
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	libpng-devel
 BuildRequires:	perl-libwww
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
