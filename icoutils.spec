@@ -7,6 +7,7 @@ Release:	2
 License:	GPL
 Group:		Applications/Graphics
 Source0:	http://www.student.lu.se/~nbi98oli/src/%{name}-%{version}.tar.gz
+# Source0-md5:	623f4110106a5e440a742e22d4077fb2
 Patch0:		%{name}-am_fixes.patch
 URL:		http://www.student.lu.se/~nbi98oli/
 BuildRequires:	autoconf
