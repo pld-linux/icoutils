@@ -1,8 +1,8 @@
 Summary:	Extract and convert bitmaps from Windows icon and cursor files
 Summary(pl):	Narzêdzie wyci±gaj±ce i konwertuj±ce bitmapy z windowsowych plików ikon i kursorów
 Name:		icoutils
-Version:	0.16.0
-Release:	4
+Version:	0.18.0
+Release:	1
 License:	GPL
 Group:		Applications/Graphics
 Source0:	http://www.student.lu.se/~nbi98oli/src/%{name}-%{version}.tar.gz
@@ -39,7 +39,9 @@ nazywane zasobami).
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%makeinstall
+
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 install extresso/extresso extresso/genresscript $RPM_BUILD_ROOT%{_bindir}
 
