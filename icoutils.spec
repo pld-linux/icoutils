@@ -6,7 +6,6 @@ Release:	4
 License:	GPL
 Group:		Applications/Graphics
 Source0:	http://www.student.lu.se/~nbi98oli/src/%{name}-%{version}.tar.gz
-Patch0:		%{name}-compat-fix.patch
 URL:		http://www.student.lu.se/~nbi98oli/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -29,7 +28,6 @@ nazywane zasobami).
 
 %prep
 %setup -q
-%patch -p1
 
 %build
 %{__aclocal}
