@@ -6,10 +6,10 @@ Version:	0.23.0
 Release:	1
 License:	GPL
 Group:		Applications/Graphics
-Source0:	http://www.student.lu.se/~nbi98oli/src/%{name}-%{version}.tar.gz
+Source0:	http://savannah.nongnu.org/download/icoutils/%{name}-%{version}.tar.gz
 # Source0-md5:	d9ff42d51a1d3b2baa55d81309502222
 Patch0:		%{name}-am_fixes.patch
-URL:		http://www.student.lu.se/~nbi98oli/
+URL:		http://www.nongnu.org/icoutils/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
 BuildRequires:	libpng-devel
