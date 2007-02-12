@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	Extract and convert bitmaps from Windows icon and cursor files
-Summary(pl):	Narzêdzie wyci±gaj±ce i konwertuj±ce bitmapy z windowsowych plików ikon i kursorów
+Summary(pl.UTF-8):   NarzÄ™dzie wyciÄ…gajÄ…ce i konwertujÄ…ce bitmapy z windowsowych plikÃ³w ikon i kursorÃ³w
 Name:		icoutils
 Version:	0.26.0
 Release:	1
@@ -24,11 +24,11 @@ usually have the extension .ico or .cur, but they can also be embedded
 in executables and libraries (.dll-files). (Such embedded files are
 referred to as resources.)
 
-%description -l pl
-icoutils to zestaw programów do wyci±gania i konwertowania bitmap z
-plików ikon i kursorów u¿ywanych w Microsoft Windows. Te pliki maj±
-zazwyczaj rozszerzenie .ico lub .cur, ale mog± byæ wbudowane w pliki
-wykonywalne lub biblioteki (pliki .dll) (takie wbudowane pliki s±
+%description -l pl.UTF-8
+icoutils to zestaw programÃ³w do wyciÄ…gania i konwertowania bitmap z
+plikÃ³w ikon i kursorÃ³w uÅ¼ywanych w Microsoft Windows. Te pliki majÄ…
+zazwyczaj rozszerzenie .ico lub .cur, ale mogÄ… byÄ‡ wbudowane w pliki
+wykonywalne lub biblioteki (pliki .dll) (takie wbudowane pliki sÄ…
 nazywane zasobami).
 
 %prep
