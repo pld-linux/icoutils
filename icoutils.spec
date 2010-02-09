@@ -13,7 +13,6 @@ BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake >= 1.5
 BuildRequires:	libpng-devel
 BuildRequires:	libtool
-BuildRequires:	perl-libwww
 BuildRequires:	rpm-perlprov
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
