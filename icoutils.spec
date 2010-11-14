@@ -2,15 +2,16 @@
 Summary:	Extract and convert bitmaps from Windows icon and cursor files
 Summary(pl.UTF-8):	Narzędzie wyciągające i konwertujące bitmapy z windowsowych plików ikon i kursorów
 Name:		icoutils
-Version:	0.26.0
-Release:	2
-License:	GPL
+Version:	0.29.1
+Release:	1
+License:	GPL v3+
 Group:		Applications/Graphics
-Source0:	http://savannah.nongnu.org/download/icoutils/%{name}-%{version}.tar.gz
-# Source0-md5:	5494ee42a9dad562b49c6b8721f973e8
+Source0:	http://savannah.nongnu.org/download/icoutils/%{name}-%{version}.tar.bz2
+# Source0-md5:	b58f375e0f8731595e8d0ecdc3a0acb9
 URL:		http://www.nongnu.org/icoutils/
-BuildRequires:	autoconf >= 2.57
+BuildRequires:	autoconf >= 2.59
 BuildRequires:	automake >= 1.5
+BuildRequires:	gettext >= 0.14.1
 BuildRequires:	libpng-devel
 BuildRequires:	libtool
 BuildRequires:	rpm-perlprov
@@ -49,11 +50,19 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+%find_lang %{name}
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files
+%files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc README AUTHORS ChangeLog NEWS TODO
-%attr(755,root,root) %{_bindir}/*
-%{_mandir}/man1/*
+%doc AUTHORS ChangeLog NEWS README TODO
+%attr(755,root,root) %{_bindir}/extresso
+%attr(755,root,root) %{_bindir}/genresscript
+%attr(755,root,root) %{_bindir}/icotool
+%attr(755,root,root) %{_bindir}/wrestool
+%{_mandir}/man1/extresso.1*
+%{_mandir}/man1/genresscript.1*
+%{_mandir}/man1/icotool.1*
+%{_mandir}/man1/wrestool.1*
