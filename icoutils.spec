@@ -11,7 +11,7 @@ Source0:	http://savannah.nongnu.org/download/icoutils/%{name}-%{version}.tar.bz2
 URL:		http://www.nongnu.org/icoutils/
 BuildRequires:	autoconf >= 2.59
 BuildRequires:	automake >= 1.5
-BuildRequires:	gettext-devel >= 0.14.1
+BuildRequires:	gettext-tools >= 0.14.1
 BuildRequires:	libpng-devel
 BuildRequires:	rpm-perlprov
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
