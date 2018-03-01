@@ -2,12 +2,12 @@
 Summary:	Extract and convert bitmaps from Windows icon and cursor files
 Summary(pl.UTF-8):	Narzędzie wyciągające i konwertujące bitmapy z windowsowych plików ikon i kursorów
 Name:		icoutils
-Version:	0.31.3
+Version:	0.32.2
 Release:	1
 License:	GPL v3+
 Group:		Applications/Graphics
 Source0:	http://savannah.nongnu.org/download/icoutils/%{name}-%{version}.tar.bz2
-# Source0-md5:	7e1226b1557ea4260dc6cdfa01aaa20a
+# Source0-md5:	675982e1c201c36f61448dcbe4d40e2b
 URL:		http://www.nongnu.org/icoutils/
 BuildRequires:	autoconf >= 2.59
 BuildRequires:	automake >= 1.5
